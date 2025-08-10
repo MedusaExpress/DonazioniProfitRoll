@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Donazioni Medusa Express</title>
+  <link href="https://fonts.googleapis.com/css2?family=Point+Black&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Point Black', sans-serif;
+      display: flex;
+      height: 100vh;
+      background: #f9f9f9;
+    }
+
+  /* Sidebar laterale sinistra */
+    .sidebar {
+      width: 180px;
+      background-color: #ffa253;
+      color: orange;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px;
+    }
+
+    .sidebar img {
+      max-width: 140px;
+      margin-bottom: 30px;
+    }
+
+
+    /* Contenuto principale */
+    .main-content {
+      flex-grow: 1;
+      padding: 40px;
+      overflow-y: auto; /* Per scroll se contenuto lungo */
+    }
+
+
+  h1 {
+      text-align: center;
+      color: #EF6446;
+      margin-bottom: 30px;
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Tabella */
+    table {
+      width: 300px; /* larghezza fissa più stretta per contenere i bottoni */
+      border-collapse: collapse;
+      margin: 0 auto 40px auto; /* centrata orizzontalmente */
+    }
+
+    /* Prima riga arancione */
+    tr.header-row {
+      background-color: #EF6446;
+      color: white;
+    }
+
+    tr.header-row td {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 15px 0;
+      font-weight: 700;
+    }
+
+    /* Seconda riga con i bottoni */
+    tr.button-row td {
+      text-align: center;
+      padding: 15px 0;
+      vertical-align: top;
+    }
+
+    /* Stile base bottoni */
+    .donation-button {
+      display: block; /* blocco per farli uno sotto l'altro */
+      width: 220px;
+      margin: 10px auto; /* centrati e con spazio verticale */
+      padding: 15px 10px;
+      border-radius: 8px;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      font-family: 'Point Black', sans-serif;
+      user-select: none;
+      transition: filter 0.2s ease;
+    }
+
+    .donation-button:hover {
+      filter: brightness(0.85);
+    }
+
+    /* Colori diversi per ogni bottone */
+    .btn-1 {
+      background-color: #f39c12; /* arancione più chiaro */
+    }
+
+    .btn-2 {
+      background-color: #27ae60; /* verde */
+    }
+
+    .btn-3 {
+      background-color: #2980b9; /* blu */
+    }
+
+    .btn-4 {
+      background-color: #8e44ad; /* viola */
+    }
+
+    /* Sottotitolo sotto il testo principale */
+    .subtitle {
+      display: block;
+      font-weight: 400;
+      font-size: 0.9rem;
+      margin-top: 6px;
+      color: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+   <img src="C:\Users\chiar\OneDrive\Desktop\logo in png x web.png" alt="Logo" />
+  </div>
+
+  <div class="main-content">
+    <h1 style="text-align: center; color: #0f3a49;">
+Dona a <span style="color: #03c5ab;">Brookies</span>
+</h1>
+
+
+
+    <table>
+      <tr class="header-row">
+        <td>Scegli l'importo</td>
+      </tr>
+      <tr class="button-row">
+        <td>
+          <a href="https://esempio1.it" class="donation-button btn-1">
+            1 euro
+            <span class="subtitle">Caffè</span>
+          </a>
+          <a href="https://esempio2.it" class="donation-button btn-2">
+            2 euro
+            <span class="subtitle">Birra</span>
+          </a>
+          <a href="https://esempio3.it" class="donation-button btn-3">
+            4 euro
+            <span class="subtitle">Panino</span>
+          </a>
+          <a href="https://esempio4.it" class="donation-button btn-4">
+            10 euro
+            <span class="subtitle">Importo massimo</span>
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
+
