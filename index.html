@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <title>Donazioni Medusa Express</title>
-  <link href="https://fonts.googleapis.com/css2?family=Point+Black&display=swap" rel="stylesheet" />
-  <style>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+<title>Donazioni Medusa Express</title>
+<link href="https://fonts.googleapis.com/css2?family=Point+Black&amp;display=swap" rel="stylesheet"/>
+<style>
     body {
       margin: 0;
       font-family: 'Point Black', sans-serif;
@@ -116,43 +117,67 @@
       margin-top: 6px;
       color: #eee;
     }
-  </style>
+  
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+  }
+  .sidebar img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .main-content {
+    padding: 20px;
+  }
+  table {
+    width: 100%;
+  }
+  .donation-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+</style>
 </head>
 <body>
-
-  <div class="sidebar">
-   <img src="logo.png" alt="Logo" />
-  </div>
-
-  <div class="main-content">
-    <h1 style="text-align: center; color: #0f3a49;">
+<div class="sidebar">
+<img alt="Logo" src="logo.png"/>
+</div>
+<div class="main-content">
+<h1 style="text-align: center; color: #0f3a49;">
 Dona a <span style="color: #f7b4e0;">Profit & Roll</span>
 </h1>
-
-
-
-    <table>
-      <tr class="header-row">
-        <td>Scegli l'importo</td>
-      </tr>
-      <tr class="button-row">
-        <td>
-          <a href="https://www.paypal.com/paypalme/mariacarus/1EUR" class="donation-button btn-1">
+<table>
+<tr class="header-row">
+<td>Scegli l'importo</td>
+</tr>
+<tr class="button-row">
+<td>
+<a class="donation-button btn-1" href="https://www.paypal.com/paypalme/mariacarus/1EUR">
             1 euro
             <span class="subtitle">Caffè</span>
-          </a>
-          <a href="https://www.paypal.com/paypalme/mariacarus/2EUR" class="donation-button btn-2">
+</a>
+<a class="donation-button btn-2" href="https://www.paypal.com/paypalme/mariacarus/2EUR">
             2 euro
             <span class="subtitle">Birra</span>
-          </a>
-          <a href="https://www.paypal.com/paypalme/mariacarus/4EUR" class="donation-button btn-3">
+</a>
+<a class="donation-button btn-3" href="https://www.paypal.com/paypalme/mariacarus/4EUR">
             4 euro
             <span class="subtitle">Panino</span>
-          </a>
-        </td>
-      </tr>
-    </table>
-  </div>
+</a>
 
+</td>
+</tr>
+</table>
+</div>
 </body>
 </html>
